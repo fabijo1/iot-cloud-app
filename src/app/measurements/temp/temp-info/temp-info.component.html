@@ -1,0 +1,32 @@
+<section class ="info-tiles ">
+        <div class =" tile is-ancestor has-text-centered ">
+        <div class =" tile is - parent ">
+        <article class =" tile is - child box ">
+        <p class =" title" >{{measurements.length }} </p>
+        <p class =" subtitle ">Anzahl </p>
+        </article >
+        </div >
+        <div class =" tile is - parent ">
+        <article class =" tile is-child box ">
+        <p class =" title " * ngIf =" maxTemp !== null ">{{precisionRound(
+        maxTemp ,1) }}_C</p>
+        <p class =" subtitle ">Maximal </p>
+        </article >
+        </div >
+        <div class =" tile is-parent ">
+        <article class =" tile is-child box ">
+        <p class =" title " * ngIf =" minTemp !== null ">{{precisionRound(
+        minTemp , 1 )}}_C </p>
+        <p class =" subtitle ">Minimal </p>
+        </article >
+        </div >
+        <div class =" tile is-parent ">
+        <article class =" tile is-child box ">
+        <p class =" title " * ngIf =" dsTemp !== undefined ">{{
+        precisionRound(dsTemp ,1) }}_C</p>
+        <p class =" subtitle "> Durchschnitt </p>
+        </article >
+        </div >
+        </div >
+        </section >
+        

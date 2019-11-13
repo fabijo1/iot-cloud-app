@@ -1,0 +1,6 @@
+<div *ngIf = "measurements !== undefined && measurements.length > 0">
+<app-temp-now [item]= "measurements[measurements.length - 1]"></app-temp-now>
+<app-temp-info [measurements]= "measurements"> </app-temp-info >
+<app-temp-chart [measurements]= "measurements"></app-temp-chart>
+</div >
+        
